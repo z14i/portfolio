@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_categories",
+  "info": {
+    "singularName": "project-category",
+    "pluralName": "project-categories",
+    "displayName": "Project Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CategoryTitle": {
+      "type": "string",
+      "required": true
+    },
+    "CategoryDescription": {
+      "type": "text"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "mappedBy": "project_categories"
+    }
+  }
+}
