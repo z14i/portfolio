@@ -236,7 +236,7 @@ export default function Page() {
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Got a question? Just drop me a{" "}
                 <Link
-                  href={DATA.contact.social.X.url}
+                  href={DATA.contact.social.Whatsapp.url}
                   className="text-blue-500 hover:underline"
                 >
                   WhatsApp message

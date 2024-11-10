@@ -5,7 +5,7 @@ import { describe } from "node:test";
 export const DATA = {
   name: "Abdulrahim Yousuf",
   initials: "Obaydev",
-  url: "https://dillion.io",
+  url: "https://www.obaydev1.com/",
   location: "Oman, Muscat",
   locationLink: "#",
   description:
@@ -34,7 +34,6 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "me@obaydev1.com",
@@ -46,6 +45,13 @@ export const DATA = {
         icon: Icons.github,
 
         navbar: true,
+      },
+      Whatsapp: {
+        name: "GitHub",
+        url: "https://wa.me/96877505506",
+        icon: Icons.github,
+
+        navbar: false,
       },
       LinkedIn: {
         name: "LinkedIn",
