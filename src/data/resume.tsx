@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { describe } from "node:test";
 
 export const DATA = {
   name: "Abdulrahim Yousuf",
@@ -26,6 +27,10 @@ export const DATA = {
     "MySql",
     "Docker",
     "C++",
+    "WHM",
+    "CPANEL",
+    "AZUR",
+    "LINUX",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -80,8 +85,8 @@ export const DATA = {
       location: "Remote",
       title: "CEO & Founder",
       logoUrl: "/nibras.png",
-      start: "January 2021",
-      end: "NOW",
+      start: "NOW ",
+      end: "",
       description:
         "As the Founder of Nibras, I’m dedicated to building innovative SaaS solutions that redefine user experiences. From crafting sleek, responsive interfaces to developing dynamic, scalable features, we’re on a mission to create powerful tools that make life easier for our users. At Nibras, it’s all about blending cutting-edge tech with seamless usability—ensuring every project doesn’t just look good but also delivers value and impact, every step of the way! 🚀✨",
     },
@@ -118,27 +123,157 @@ export const DATA = {
       href: "https://www.utas.edu.om/",
       degree: "Diploma in Software Development",
       logoUrl: "/utas.png",
-      start: "2023",
-      end: "2024",
+      start: "2017",
+      end: "2022",
     },
   ],
-  projects: [
+  maintainence: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
-      active: true,
-      description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+      website: "Experince Oman",
+      href: "https://experienceoman.om/",
       technologies: [
         "Next.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "JSON",
+      ],
+      logoUrl: "/omanexplogo.webp",
+      start: "2023",
+      end: "2024",
+    },
+    {
+      website: "Oman Adventures Center",
+      href: "https://omanadventures.com/",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "JSON",
+      ],
+      logoUrl: "/omanadventuresLogo.png",
+      start: "2023",
+      end: "NOW",
+    },
+    {
+      website: "Omran",
+      href: "https://www.omran.om/",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "JSON",
+      ],
+      logoUrl: "/omranLogo.svg",
+      start: "2022",
+      end: "NOW",
+    },
+    {
+      website: "Visit Oman",
+      href: "https://visitoman.om/",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "JSON",
+      ],
+      logoUrl: "/visitLogo.png",
+      start: "2022",
+      end: "NOW",
+    },
+    {
+      website: "Alhoota Cave",
+      href: "https://www.alhootacave.om/",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "JSON",
+      ],
+      logoUrl: "/alhotaLogo.png",
+      start: "2022",
+      end: "NOW",
+    },
+    {
+      website: "ras-aljinz turtle reserve",
+      href: "https://www.rasaljinz-turtlereserve.com/ar/",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "JSON",
+      ],
+      logoUrl: "/rasAljinz.png",
+      start: "2022",
+      end: "NOW",
+    },
+  ],
+
+
+
+
+
+
+  projects: [
+    {
+      title: "Intajee",
+      href: "https://intajee.om/",
+      dates: "",
+      active: true,
+      description:
+        "As a Front-End Developer at FoxCod, I helped bring **Intajee.om** to life for Omran Group—a platform that empowers Omani brands with top-notch media magic! 🪄 I crafted sleek, responsive interfaces to boost visibility and engagement, helping Omran Group’s brands shine—locally and beyond! 🌍✨",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "JSON",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://intajee.om/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/intajee.jpg",
+      video:
+        "",
+    },
+    {
+      title: "HPSI",
+      href: "https://hpsi.moh.gov.om/",
+      dates: "",
+      active: true,
+      description:
+        "As a Front-End Developer at FoxCod, I helped bring **hpsi.moh.gov.om** to life, supporting Oman’s Vision 2040 for a healthier society. 🌍💻 By creating user-focused interfaces, I contributed to a platform that raises health awareness, promotes preventive care, and empowers Omanis to take charge of their well-being. 🏥✨",
+      technologies: [
+        "React",
+        "Typescript",
+        "TailwindCSS",
+        "JSON",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://hpsi.moh.gov.om/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/hpsi.jpg",
+      video:
+        "",
+    },
+    {
+      title: "Afaf Couture",
+      href: "https://afafcouture.com/",
+      dates: "5 days (1-5 Oct 2024) ",
+      active: true,
+      description:
+"At Nibras, I developed afafcouture.com, a stylish e-commerce platform using WooCommerce. 👗💻 The site showcases Afaf Couture’s fashion collections, supports both English and Arabic, and includes features like WhatsApp support and Thawani payment integration. 🛍️✨ This project highlights Nibras’ commitment to creating functional and visually appealing digital solutions.",
+      technologies: [
+        "Wordpress",
+        "woocommerce",
+        "Php",
+        "Project Management",
       ],
       links: [
         {
@@ -147,104 +282,86 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/AfafCouture.png",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "Tamaluk",
+      href: "https://tamaluk.newfoxcode.com/en",
+      dates: "NOW",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "-",
       technologies: [
-        "Next.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "JSON",
       ],
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
-    },
-    {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: true,
-      description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
+          href: "https://tamaluk.newfoxcode.com/en",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/tamaluk.jpg",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "",
     },
+    {
+      title: "Oman Adventures Center",
+      href: "https://omanadventures.com/",
+      dates: "",
+      active: true,
+      description:
+      "As the WordPress Team Leader at FoxCod, I developed the Oman Adventures website, a platform showcasing adrenaline-fueled activities in Musandam! 🏞️ From a record-breaking zipline to kayaking adventures, I created a seamless, responsive experience that captures the thrill of Oman’s landscapes. This project not only boosted Oman Adventures' online presence but also highlighted our dedication to crafting immersive user experiences. 🚀✨",
+      technologies: [
+        "Wordpress",
+        "woocommerce",
+        "Php",
+        "Project Management",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://omanadventures.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/omanadventures.jpg",
+      video:
+        "",
+    },
+    {
+      title: "Experince Oman",
+      href: "https://experienceoman.om/",
+      dates: "",
+      active: true,
+      description:
+        "As the WordPress Team Leader at FoxCod, I led the development of the Experience Oman website, a comprehensive platform highlighting Oman's rich culture, breathtaking landscapes, and diverse tourist attractions. I ensured the site was user-friendly and responsive, providing visitors with an engaging and informative experience. This project significantly enhanced Oman's digital tourism presence, attracting travelers worldwide.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Stripe",
+        "Shadcn UI",
+        "Magic UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://experienceoman.om/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/experinceoman.jpg",
+      video:
+        "",
+    },
+
   ],
   hackathons: [
     {

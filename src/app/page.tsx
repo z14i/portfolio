@@ -1,6 +1,7 @@
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { MaintenanceCard } from "@/components/maintain-card";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -150,6 +151,33 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+      <section id="Maintenance">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <h2 className="text-xl font-bold">Maintenance & Support</h2>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 4}>
+          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert"></Markdown>
+            <p>Keeping websites in top shape is my jam! From WHM to cPanel, Plesk, and Azure, I dive into all the tools needed to keep sites running smoothly, secure, and fresh. With regular updates, quick fixes, and new features, I make sure each platform feels brand new. Here are a few awesome sites I've had the pleasure of supporting:</p>
+          </BlurFade>
+          {DATA.maintainence.map((maintainence, id) => (
+            <BlurFade
+              key={maintainence.website}
+              delay={BLUR_FADE_DELAY * 8 + id * 0.05}
+            >
+              <MaintenanceCard
+                key={maintainence.website}
+                href={maintainence.href}
+                logoUrl={maintainence.logoUrl}
+                altText={maintainence.website}
+                title={maintainence.website}
+                technologies={maintainence.technologies}
+                period={`${maintainence.start} - ${maintainence.end}`}
+              />
+            </BlurFade>
+          ))}
         </div>
       </section>
     {/*  <section id="hackathons">
