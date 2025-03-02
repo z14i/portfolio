@@ -20,9 +20,8 @@ export const DATA = {
     "Node.js",
     "Python",
     "React Native",
-    "Php",
     "WordPress",
-    "Postgres",
+   "Postgres",
     "Mongodb",
     "MySql",
     "Docker",
@@ -67,6 +66,13 @@ export const DATA = {
 
         navbar: true,
       },
+      Instagram: {
+        name: "Instagram",
+        url: "https://instagram.com/obaydev1",
+        icon: Icons.instagram,
+
+        navbar: true,
+      },
       Youtube: {
         name: "Youtube",
         url: "https://www.youtube.com/@AbdulrahimYousuf",
@@ -101,10 +107,22 @@ export const DATA = {
       href: "http://foxcod.com/",
       badges: [],
       location: "Muscat",
+      title: "QA & Automation tester",
+      logoUrl: "/foxcod_logo.png",
+      start: "Jan 2025",
+      end: "NOW",
+      description:
+        "I drive our automated testing efforts using Playwright, ensuring reliable and high-quality product releases. By developing streamlined test frameworks and generating daily testing reports, I keep stakeholders informed and enable swift issue resolution. Working closely with the development team, I integrate tests into our CI/CD pipeline for faster feedback and delivery. In this leadership role, I also mentor a small QA team, promoting continuous improvement and a collaborative culture focused on delivering defect-free software.",
+    },
+    {
+      company: "FoxCode",
+      href: "http://foxcod.com/",
+      badges: [],
+      location: "Muscat",
       title: "Wordpress Development Team Lead",
       logoUrl: "/foxcod_logo.png",
       start: "Jun 2022",
-      end: "NOW",
+      end: "Jan 2025",
       description:
         "As the WordPress Team Lead at FoxCod, I’m the go-to guy for turning client dreams into pixel-perfect realities! From custom plugins to slick, user-friendly sites, I lead an awesome team of creatives to build web magic daily. I’m all about mixing creativity with serious functionality—making sure every project at FoxCod doesn’t just look great but also works like a charm! ✨",
     },
@@ -116,7 +134,7 @@ export const DATA = {
       title: "Front-end Developer",
       logoUrl: "/foxcod_logo.png",
       start: "Jun 2022",
-      end: "NOW",
+      end: "Jan 2025",
       description:
         "As a Front-End Developer at FoxCod, I bring creative visions to life through interactive, high-performance web experiences. From sleek interfaces to smooth animations, I work with a talented team to build digital products that look stunning and feel effortless. I’m all about combining innovation with functionality—ensuring every project at FoxCod not only looks amazing but also delivers a seamless user experience! 🚀✨",
     },
@@ -288,11 +306,11 @@ export const DATA = {
     },
     {
       title: "Tamaluk",
-      href: "https://tamaluk.newfoxcode.com/en",
-      dates: "NOW",
+      href: "https://tamluk.om/ar",
+      dates: "",
       active: true,
       description:
-        "-",
+        "As a Front-End Developer at FoxCod, I was part of the team that launched Tamluk, the first real estate crowdfunding platform in Oman. 🏥✨ We crafted the interactive elements and user interface that allows individuals to easily participate in real estate investments with smaller contributions, making property investment attainable. 💻🌍",
       technologies: [
         "Typescript",
         "TailwindCSS",
@@ -301,7 +319,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://tamaluk.newfoxcode.com/en",
+          href: "https://tamluk.om/ar",
           icon: <Icons.globe className="size-3" />,
         },
       ],
